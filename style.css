@@ -1,0 +1,452 @@
+:root {
+  --pri: #151515;
+  --sec: #a91d3a;
+  --tri1: #c73659;
+  --tri2: #eeeeee;
+  --red: rgba(195, 6, 6, 0.822);
+}
+
+@font-face {
+  font-family: aemok;
+  font-weight: 200;
+  src: url(/AeonikTRIAL-Light.otf);
+}
+@font-face {
+  font-family: aemok;
+  font-weight: 500;
+  src: url(/AeonikTRIAL-Regular.otf);
+}
+@font-face {
+  font-family: aemok;
+  font-weight: 700;
+  src: url(/AeonikTRIAL-Bold.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--pri);
+  color: var(--tri2);
+  font-family: aemok;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-color: var(--pri);
+}
+main nav {
+  background-color: var(--tri1);
+  width: 100%;
+  height: 4em;
+  position: fixed;
+  z-index: 9999;
+  display: none;
+}
+main .main_page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+main .main_page .weather_section {
+  width: 100%;
+  height: 45%;
+  padding: 1em 3em;
+}
+main .main_page .weather_section .weather_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=2048x2048&w=is&k=20&c=Xa_wH_pZFMWNX8EPtufv9KSvS1OzUPus7C0Br2ZIMDg=);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+main .main_page .weather_section .weather_container .weatherLeft {
+  width: 45%;
+  height: 80%;
+  padding-left: 1.5em;
+}
+main .main_page .weather_section .weather_container .weatherLeft .degree .spandegree {
+  color: black;
+  font-size: 7em;
+}
+main .main_page .weather_section .weather_container .weatherLeft .degree .c {
+  position: absolute;
+  top: 8%;
+  font-size: 2em;
+}
+main .main_page .weather_section .weather_container .weatherLeft .day_weather {
+  font-size: 2em;
+}
+main .main_page .weather_section .weather_container .weatherLeft .humidity {
+  font-size: 2em;
+}
+main .main_page .weather_section .weather_container .weatherRight {
+  width: 50%;
+  height: 80%;
+  height: 80%;
+  text-align: end;
+  padding-right: 30px;
+}
+main .main_page .weather_section .weather_container .weatherRight .time {
+  font-size: em;
+}
+main .main_page .weather_section .weather_container .weatherRight .time .spantime {
+  font-size: 7em;
+  padding: 5px;
+  height: 10%;
+  width: 1em;
+  background-color: #a91d3a;
+  color: black;
+}
+main .main_page .weather_section .weather_container .weatherRight .time .spanap {
+  font-size: 2em;
+}
+main .main_page section.allelement {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: absolute;
+}
+main .main_page section.allelement .element {
+  width: 18%;
+  height: 80%;
+  background-color: #a91d3a;
+  border-radius: 1em;
+  overflow: hidden;
+  position: relative;
+}
+main .main_page section.allelement .element:active {
+  scale: 0.95;
+  transition: all ease-in-out 0.5s;
+}
+main .main_page section.allelement img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .main_page section.allelement h1 {
+  position: absolute;
+  bottom: 2%;
+  right: 4%;
+}
+main .fullelement {
+  width: 100%;
+  height: 100%;
+  background-color: var(--pri);
+  font-size: 5em;
+  font-weight: 900;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main .fullelement .heading {
+  font-size: 0.9em;
+  position: absolute;
+  top: 2%;
+  left: 18%;
+}
+main .fullelement .fullelement_btn {
+  padding: 0.5em 1em;
+  background-color: var(--red);
+  font-size: 0.25em;
+  font-weight: 900;
+  color: var(--tri2);
+  position: absolute;
+  right: 4%;
+  top: 5%;
+  border-radius: 5%;
+  border: none;
+  box-shadow: 1px 2px 4px var(--tri2);
+}
+main #todo_page {
+  padding: 1.3em 1em;
+}
+main #todo_page .todo_page_main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+main #todo_page .todo_page_main .todo_page_main_left {
+  height: 90%;
+  width: 30%;
+  padding: 1%;
+  background-color: var(--sec);
+  border-radius: 20px;
+}
+main #todo_page .todo_page_main .todo_page_main_left form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2%;
+}
+main #todo_page .todo_page_main .todo_page_main_left form input {
+  padding: 0.3em 1em;
+  font-size: 0.3em;
+  outline: none;
+}
+main #todo_page .todo_page_main .todo_page_main_left form textarea {
+  max-width: 100%;
+  width: 100%;
+  max-height: 70%;
+  min-height: 20%;
+  height: 70%;
+  font-size: 0.3em;
+  padding: 0.3em 1em;
+  margin-top: 5px;
+}
+main #todo_page .todo_page_main .todo_page_main_left form button {
+  font-size: 0.3em;
+  background-color: var(--pri);
+  color: var(--tri2);
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  padding: 10px;
+}
+main #todo_page .todo_page_main .todo_page_main_left form .mark_imp {
+  padding: 2px;
+  margin-top: 5px;
+  font-size: 0.25em;
+  display: flex;
+  gap: 15px;
+  font-weight: 400;
+}
+main #todo_page .todo_page_main .todo_page_main_left form .mark_imp #checkbox {
+  scale: 1.5;
+}
+main #todo_page .todo_page_main .todo_page_main_right {
+  height: 90%;
+  width: 50%;
+  border-radius: 20px;
+  background-color: var(--sec);
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  gap: 10px;
+}
+main #todo_page .todo_page_main .todo_page_main_right .right_heading {
+  font-size: 0.5em;
+  text-align: center;
+}
+main #todo_page .todo_page_main .todo_page_main_right .card {
+  font-size: 20px;
+  width: 100%;
+  height: 15%;
+  background-color: var(--pri);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+}
+main #todo_page .todo_page_main .todo_page_main_right .card h1 {
+  max-width: 20%;
+  overflow: hidden;
+}
+main #todo_page .todo_page_main .todo_page_main_right .card .impstar {
+  color: red;
+  font-size: 15px;
+}
+main #todo_page .todo_page_main .todo_page_main_right .card .star {
+  display: none;
+}
+main #todo_page .todo_page_main .todo_page_main_right .card .right_mark_btn {
+  padding: 1.8%;
+  border-radius: 10px;
+  background-color: rgb(62, 176, 62);
+  font-size: 0.8em;
+  font-weight: 700;
+}
+main #planer_page {
+  font-size: medium;
+  padding: 1em;
+  color: var(--tri2);
+}
+main #planer_page .fullelement_btn {
+  font-size: 1.3em;
+}
+main #planer_page .Planer_heading {
+  font-size: 3.8em;
+  text-align: center;
+  color: var(--sec);
+}
+main #planer_page .day_planer {
+  width: 100%;
+  height: 80%;
+  background-color: var(--sec);
+  margin-top: 2em;
+  padding: 1em;
+  border-radius: 10px;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1em;
+}
+main #planer_page .day_planer .planer_timer {
+  width: 49%;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: var(--pri);
+  border-radius: 10px;
+  display: flex;
+  padding: 1em;
+  position: relative;
+  margin-bottom: 1em;
+}
+main #planer_page .day_planer .planer_timer p {
+  position: absolute;
+  top: 5%;
+  left: 1%;
+  color: var(--tri1);
+}
+main #planer_page .day_planer .planer_timer input {
+  padding: 0.3em 0.6em;
+  background-color: var(--pri);
+  border: none;
+  width: 100%;
+  font-size: 1.4em;
+  color: var(--tri2);
+  outline: none;
+}
+main #planer_page .day_planer::-webkit-scrollbar {
+  display: none;
+}
+main #moto_page {
+  font-size: medium;
+  min-height: auto;
+  padding: 1em;
+}
+main #moto_page .fullelement_btn {
+  font-size: 1.4em;
+}
+main #moto_page .motivation_container {
+  width: 30%;
+  min-height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main #moto_page .motivation_container::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  scale: 1.1;
+  background-color: var(--tri1);
+  position: absolute;
+  top: 0%;
+  border-radius: 20px;
+  filter: blur(50px);
+}
+main #moto_page .motivation_wraper {
+  width: 100%;
+  height: 100%;
+  background-color: var(--sec);
+  border-radius: 20px;
+  z-index: 1;
+  padding: 1em;
+  position: absolute;
+}
+main #moto_page .motivation_wraper h1 {
+  width: 50%;
+  padding: 0.5em;
+  border-radius: 10px;
+  border: 0.5px solid beige;
+  background-color: var(--pri);
+  text-align: center;
+  position: absolute;
+  left: 25%;
+}
+main #moto_page .motivation_wraper .qoute_container {
+  width: 90%;
+  min-height: auto;
+  background-color: var(--pri);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1em 0.3em;
+  text-align: center;
+  border-radius: 20px;
+  border: 0.5px solid beige;
+  margin-top: 10px;
+}
+main #moto_page .motivation_wraper .author {
+  min-width: auto;
+  min-height: auto;
+  background-color: var(--pri);
+  position: absolute;
+  bottom: 5%;
+  right: 2%;
+  padding: 0.5em;
+  text-align: center;
+  border-radius: 5px;
+  border: 0.5px solid beige;
+  font-weight: 100;
+}
+main #moto_page .motivation_wrap {
+  width: 90%;
+  min-height: 40%;
+  background-color: var(--pri);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+}
+main #pomo_page {
+  font-size: medium;
+}
+main #pomo_page .fullelement_btn {
+  font-size: 1.5em;
+}
+main #pomo_page .pomo_container {
+  height: 50%;
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main #pomo_page .pomo_container .session_name {
+  padding: 1.5em 2em;
+  border-radius: 10px;
+  background-color: rgb(21, 115, 21);
+  font-size: 0.3em;
+}
+main #pomo_page .pomo_container h1 {
+  font-size: 8em;
+}
+main #pomo_page .pomo_container .button_container button {
+  border-radius: 10px;
+  background-color: var(--tri1);
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 0.3em 1em;
+}/*# sourceMappingURL=style.css.map */

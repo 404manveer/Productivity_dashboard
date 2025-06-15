@@ -1,0 +1,507 @@
+:root {
+  --pri: #151515;
+  --sec: #a91d3a;
+  --tri1: #c73659;
+  --tri2: #eeeeee;
+  --red: rgba(195, 6, 6, 0.822);
+}
+
+@font-face {
+  font-family: aemok;
+  font-weight: 200;
+  src: url(/AeonikTRIAL-Light.otf);
+}
+@font-face {
+  font-family: aemok;
+  font-weight: 500;
+  src: url(/AeonikTRIAL-Regular.otf);
+}
+@font-face {
+  font-family: aemok;
+  font-weight: 700;
+  src: url(/AeonikTRIAL-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--pri);
+  color: var(--tri2);
+  font-family: aemok;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-color: var(--pri);
+
+  nav {
+    background-color: var(--tri1);
+    width: 100%;
+    height: 4em;
+    position: fixed;
+    z-index: 9999;
+    display: none;
+  }
+
+  .main_page {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .weather_section {
+      // color: #151515;
+      width: 100%;
+      height: 45%;
+      padding: 1em 3em;
+
+
+      .weather_container {
+        // color: #151515;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-image: url(https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=2048x2048&w=is&k=20&c=Xa_wH_pZFMWNX8EPtufv9KSvS1OzUPus7C0Br2ZIMDg=);
+        
+        background-position:top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        .weatherLeft {
+          width: 45%;
+          height: 80%;
+          padding-left: 1.5em;
+          .degree{
+            .spandegree{
+
+              color: black;
+              font-size: 7em;
+            }
+            .c{
+              position:absolute;
+              top: 8%;
+              font-size: 2em;
+            }
+          }
+          .day_weather{
+            font-size: 2em;
+          }
+          .humidity{
+            font-size: 2em;
+
+          }
+          
+
+        }
+        .weatherRight {
+          width: 50%;
+          height: 80%;
+          height: 80%;
+          text-align: end;
+          padding-right: 30px;
+          
+          .time{
+            font-size: em;
+            .spantime{
+              font-size: 7em;
+              padding: 5px;
+              height: 10%;
+              width: 1em;
+              background-color: #a91d3a;
+              color: black;
+            }
+            .spanap{
+          font-size: 2em;
+        }
+          }
+          
+        }
+        
+      }
+      // background-color: var(--sec);
+    }
+
+    section.allelement {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      // background-color: var(--sec);
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      position: absolute;
+
+      .element {
+        width: 18%;
+        height: 80%;
+        background-color: #a91d3a;
+        border-radius: 1em;
+        overflow: hidden;
+        position: relative;
+      }
+      .element:active {
+        scale: 0.95;
+        transition: all ease-in-out 0.5s;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      h1 {
+        position: absolute;
+        bottom: 2%;
+        right: 4%;
+      }
+    }
+  }
+
+  .fullelement {
+    width: 100%;
+    height: 100%;
+    background-color: var(--pri);
+    font-size: 5em;
+    font-weight: 900;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .heading {
+      font-size: 0.9em;
+      position: absolute;
+      top: 2%;
+      left: 18%;
+    }
+
+    .fullelement_btn {
+      padding: 0.5em 1em;
+      background-color: var(--red);
+      font-size: 0.25em;
+      font-weight: 900;
+      color: var(--tri2);
+      position: absolute;
+      right: 4%;
+      top: 5%;
+      border-radius: 5%;
+      border: none;
+      box-shadow: 1px 2px 4px var(--tri2);
+    }
+  }
+  #todo_page {
+    padding: 1.3em 1em;
+
+    .todo_page_main {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5em;
+
+      .todo_page_main_left {
+        height: 90%;
+        width: 30%;
+        padding: 1%;
+        background-color: var(--sec);
+        border-radius: 20px;
+
+        form {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          padding-top: 2%;
+
+          input {
+            padding: 0.3em 1em;
+            font-size: 0.3em;
+            outline: none;
+          }
+
+          textarea {
+            max-width: 100%;
+            width: 100%;
+            max-height: 70%;
+            min-height: 20%;
+            height: 70%;
+            font-size: 0.3em;
+            padding: 0.3em 1em;
+            margin-top: 5px;
+          }
+
+          button {
+            font-size: 0.3em;
+            background-color: var(--pri);
+            color: var(--tri2);
+            border-radius: 10px;
+            border: none;
+            margin-top: 10px;
+            padding: 10px;
+          }
+
+          .mark_imp {
+            padding: 2px;
+            margin-top: 5px;
+            font-size: 0.25em;
+            display: flex;
+            gap: 15px;
+            font-weight: 400;
+
+            #checkbox {
+              scale: 1.5;
+            }
+          }
+        }
+      }
+      .todo_page_main_right {
+        height: 90%;
+        width: 50%;
+        border-radius: 20px;
+        background-color: var(--sec);
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        gap: 10px;
+
+        .right_heading {
+          font-size: 0.5em;
+          text-align: center;
+        }
+
+        .card {
+          font-size: 20px;
+          width: 100%;
+          height: 15%;
+          background-color: var(--pri);
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 2%;
+          h1 {
+            max-width: 20%;
+            overflow: hidden;
+          }
+
+          .impstar {
+            color: red;
+            font-size: 15px;
+          }
+          .star {
+            display: none;
+          }
+
+          .right_mark_btn {
+            padding: 1.8%;
+            border-radius: 10px;
+            background-color: rgb(62, 176, 62);
+            font-size: 0.8em;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+  #planer_page {
+    font-size: medium;
+    padding: 1em;
+    color: var(--tri2);
+
+    .fullelement_btn {
+      font-size: 1.3em;
+    }
+
+    .Planer_heading {
+      font-size: 3.8em;
+      text-align: center;
+
+      color: var(--sec);
+    }
+
+    .day_planer {
+      width: 100%;
+      height: 80%;
+      background-color: var(--sec);
+      margin-top: 2em;
+      padding: 1em;
+      border-radius: 10px;
+      overflow: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1em;
+
+      .planer_timer {
+        width: 49%;
+        height: max-content;
+        background-color: var(--pri);
+        border-radius: 10px;
+        display: flex;
+        padding: 1em;
+        position: relative;
+        margin-bottom: 1em;
+
+        p {
+          position: absolute;
+          top: 5%;
+          left: 1%;
+          color: var(--tri1);
+        }
+
+        input {
+          padding: 0.3em 0.6em;
+          background-color: var(--pri);
+          border: none;
+          width: 100%;
+          font-size: 1.4em;
+          color: var(--tri2);
+          outline: none;
+        }
+      }
+    }
+    .day_planer::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  #moto_page {
+    font-size: medium;
+    min-height: auto;
+    padding: 1em;
+    .fullelement_btn {
+      font-size: 1.4em;
+    }
+
+    .motivation_container {
+      width: 30%;
+      min-height: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .motivation_container::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      scale: 1.1;
+      background-color: var(--tri1);
+      position: absolute;
+      top: 0%;
+      border-radius: 20px;
+      filter: blur(50px);
+    }
+    .motivation_wraper {
+      width: 100%;
+      height: 100%;
+      background-color: var(--sec);
+      border-radius: 20px;
+      z-index: 1;
+      padding: 1em;
+      position: absolute;
+      h1 {
+        width: 50%;
+        padding: 0.5em;
+        border-radius: 10px;
+        border: 0.5px solid beige;
+        background-color: var(--pri);
+        text-align: center;
+        position: absolute;
+        left: 25%;
+      }
+      .qoute_container {
+        width: 90%;
+        min-height: auto;
+        background-color: var(--pri);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1em 0.3em;
+        text-align: center;
+        border-radius: 20px;
+        border: 0.5px solid beige;
+        margin-top: 10px;
+      }
+      .author {
+        min-width: auto;
+        min-height: auto;
+        background-color: var(--pri);
+        position: absolute;
+        bottom: 5%;
+        right: 2%;
+        padding: 0.5em;
+        text-align: center;
+        border-radius: 5px;
+        border: 0.5px solid beige;
+        font-weight: 100;
+      }
+    }
+    .motivation_wrap {
+      width: 90%;
+      min-height: 40%;
+      background-color: var(--pri);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      border-radius: 20px;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  #pomo_page {
+    font-size: medium;
+    // position: relative;
+    .fullelement_btn {
+      font-size: 1.5em;
+    }
+
+    .pomo_container {
+      height: 50%;
+      width: 40%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .session_name {
+        padding: 1.5em 2em;
+        border-radius: 10px;
+        background-color: rgb(21, 115, 21);
+        font-size: 0.3em;
+      }
+
+      h1 {
+        font-size: 8em;
+      }
+
+      .button_container {
+        button {
+          border-radius: 10px;
+          background-color: var(--tri1);
+          font-size: 1.5em;
+          font-weight: 700;
+          padding: 0.3em 1em;
+        }
+      }
+    }
+  }
+}
