@@ -79,18 +79,18 @@ main .main_page .weather_section .weather_container .weatherLeft {
 }
 main .main_page .weather_section .weather_container .weatherLeft .degree .spandegree {
   color: black;
-  font-size: 2rem;
+  font-size: 8rem;
 }
 main .main_page .weather_section .weather_container .weatherLeft .degree .c {
   position: absolute;
   top: 8%;
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 main .main_page .weather_section .weather_container .weatherLeft .day_weather {
-  font-size: 8rem;
+  font-size: 3rem;
 }
 main .main_page .weather_section .weather_container .weatherLeft .humidity {
-  font-size: 6rem;
+  font-size: 3rem;
 }
 main .main_page .weather_section .weather_container .weatherRight {
   width: 50%;
