@@ -87,10 +87,10 @@ main .main_page .weather_section .weather_container .weatherLeft .degree .c {
   font-size: 2.5rem;
 }
 main .main_page .weather_section .weather_container .weatherLeft .day_weather {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 main .main_page .weather_section .weather_container .weatherLeft .humidity {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 main .main_page .weather_section .weather_container .weatherRight {
   width: 50%;
@@ -107,7 +107,7 @@ main .main_page .weather_section .weather_container .weatherRight .time .spantim
   padding: 5px;
   height: 10%;
   width: 1em;
-  background-color: #a91d3a;
+ 
   color: black;
 }
 main .main_page .weather_section .weather_container .weatherRight .time .spanap {
