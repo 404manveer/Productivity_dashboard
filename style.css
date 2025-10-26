@@ -51,7 +51,6 @@ main nav {
 }
 main .main_page {
   width: 100%;
-  max-width:1240px;
   height: 100%;
   position: relative;
 }
@@ -80,7 +79,7 @@ main .main_page .weather_section .weather_container .weatherLeft {
 }
 main .main_page .weather_section .weather_container .weatherLeft .degree .spandegree {
   color: black;
-  font-size: 10rem;
+  font-size: 2rem;
 }
 main .main_page .weather_section .weather_container .weatherLeft .degree .c {
   position: absolute;
@@ -101,10 +100,10 @@ main .main_page .weather_section .weather_container .weatherRight {
   padding-right: 30px;
 }
 main .main_page .weather_section .weather_container .weatherRight .time {
-  font-size: em;
+  font-size: 4rem;
 }
 main .main_page .weather_section .weather_container .weatherRight .time .spantime {
-  font-size: 7em;
+  font-size: 8rem;
   padding: 5px;
   height: 10%;
   width: 1em;
